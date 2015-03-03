@@ -2362,3 +2362,21 @@ input,
   
   .home_area{
   clear:both}
+  
+  /* CUSTOM CSS*/
+  
+ .uploadfieldtrick #fileuploadfield {
+    display:none;
+}
+
+.uploadfieldtrick #uploadtextfield {
+  border:none !important;
+  
+}
+
+.uploadfieldtrick #uploadbrowsebutton {
+ 
+  margin-top:5px;
+  text-align:center;
+}
+  

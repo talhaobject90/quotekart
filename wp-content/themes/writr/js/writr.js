@@ -1,4 +1,32 @@
 ( function( $ ) {
+	
+	
+	
+	  /*Brought click function of fileupload button when text field is clicked*/
+	$("#uploadtextfield").click(function() {
+		$('#fileuploadfield').click()
+	});
+
+  /*Brought click function of fileupload button when browse button is clicked*/
+	$("#uploadbrowsebutton").click(function() {
+		$('#fileuploadfield').click()
+	});
+
+  /*To bring the selected file value in text field*/	
+	$('#fileuploadfield').change(function() {
+    $('#uploadtextfield').val($(this).val());
+  });
+	
+	
+	/*To bring the selected file value in text field*/	
+	$('#fileuploadfield').change(function() {
+    $('#uploadtextfield').val($(this).val());
+  });
+
+	
+	
+	
+	
 
 	/*
 	 * Click to toggle sidebar.
