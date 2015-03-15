@@ -69,6 +69,12 @@ class WPCF7_Submission {
 		return $this->posted_data;
 	}
 
+	
+	public function get_current_time_stamp( ) {
+		return $this->meta['timestamp'];
+	} 
+	
+	
 	private function setup_posted_data() {
 		$posted_data = $this->sanitize_posted_data( $_POST );
 
@@ -139,6 +145,7 @@ class WPCF7_Submission {
 				? $_POST['_wpcf7_unit_tag'] : '' );
 
 		$contact_form = $this->contact_form;
+		$time_stamps = current_time( 'timestamp' );
 
 		if ( ! $this->validate() ) { // Validation error occured
 			$this->status = 'validation_failed';

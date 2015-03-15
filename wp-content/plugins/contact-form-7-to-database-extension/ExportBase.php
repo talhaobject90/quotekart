@@ -541,6 +541,8 @@ class ExportBase {
      * @return string
      */
     public function &getPivotQuery($formName, $count = false, $submitTimes = null) {
+    	
+ 
         global $wpdb;
         $tableName = $this->plugin->getSubmitsTableName();
 
